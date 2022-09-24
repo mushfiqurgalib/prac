@@ -8,5 +8,8 @@ router.get('/', controller.getUsers);
 
 router.post('/', controller.createUser);
 
+router.get("/1sttosecond", controller.firstServiceToSecond);
+
+
 module.exports=router;
 
