@@ -1,0 +1,13 @@
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+npm init -y
+
+npm install nodemon --save-dev
+
+npm i express axios
+
+npx nodemon index
+
+sudo docker-compose up --build
+
+sudo docker-compose config
